@@ -9,11 +9,19 @@ double readNumberFromConsole(string message);
 
 double fahrenheitToCelsius(double fahrenheits);
 
+void fahrenheitToCelsiusProgram();
+
+
 int main() {
 
-    cout << fahrenheitToCelsius(111);
+    fahrenheitToCelsiusProgram();
     simpleTaxCalculations();
     return 0;
+}
+
+void fahrenheitToCelsiusProgram() {
+    double fahrenheits = readNumberFromConsole("Enter fahrenheits to be converted:");
+    cout << fahrenheitToCelsius(fahrenheits) << endl;
 }
 
 double fahrenheitToCelsius(double fahrenheits) {
